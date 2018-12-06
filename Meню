@@ -8,32 +8,28 @@
 <body>
 <ul id="menu">
 	<li>
-		<a href="#">Глаыная</a>
+		<a href="index.html">Главная</a>
+		<ul>
+		</ul>
+	<li>
+	<li>
+		<a href="#">Информатика</a>
 		<ul>
 			<li>
+				<a href="CSS.html">CSS</a>
+			</li>
+			<li>
+				<a href="JS.html">JS</a>
+			</li>
 		</ul>
 	<li>
 	<li>
-		<a href="#">Пример1</a>
+		<a href="primer1.html">Пример</a>
 		<ul>
-			<li>
-				<a href="h115.html">Child D</a>
-			</li>
-			<li>
-				<a href="textstyle.html">Child E</a>
-			</li>
-			<li>
-			</li>
-		</ul>
+			</ul>
 	<li>
-	<li>
-		<a href="#">Пример 2</a>
-			</li>
-		</ul>
-	<li>
-	<li>
-			</li>
-	<li>
+	
+</ul>
 <br>
 </body>
 </html>
