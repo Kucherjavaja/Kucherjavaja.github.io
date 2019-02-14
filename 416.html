@@ -41,29 +41,32 @@ ctx.fillRect(0, 0, 640, 480);
 ctx.closePath();
 }
 		function er1(){
+	Skv=Number(document.getElementById("Skv_znach").value); 
+Sok=Number(document.getElementById("Sok_znach").value);   
+var a=Math.sqrt(Skv);		  
+var R=Math.sqrt(Sok/3,14);
 var canvas = document.getElementById('example');
 var ctx = canvas.getContext('2d');
 ctx.beginPath();
 ctx.strokeStyle = 'red';
-drawpoint() ;
-
+ctx.arc(320, 240, R, 0, 2 * Math.PI);
+ctx.moveTo(320+a/2, 240-a/2);
+ctx.lineTo(320+a/2, 240+a/2);
+ctx.lineTo(320-a/2, 240+a/2);
+ctx.lineTo(320-a/2, 240-a/2);
+ctx.closePath();
 ctx.stroke();
-
-
+if (2*R<a) {
+document.getElementById("otvet").innerHTML = "Круг умещается в квадрате";
 }
-
-function drawpoint() { 
-Skv=Number(document.getElementById("Skv_znach").value); 
-Sok=Number(document.getElementById("Sok_znach").value); 
-Skv=320+x*10; 
-Sok=240-y*10; 
-var canvas = document.getElementById('example'); 
-var ctx = canvas.getContext('2d'); 
-ctx.beginPath(); 
-ctx.strokeStyle = 'green'; 
-ctx.arc(x, y, 2, 0, 2 * Math.PI)
-ctx.stroke(); 
-} 
+else {
+  if (Math.sqrt(2*a*a)<R*2) {
+document.getElementById("otvet").innerHTML = "Квадрат умещается в круг";
+}
+else {
+document.getElementById("otvet").innerHTML = "Пересечение"; }
+}
+}
 		</script>
 	</head>
 	<body>
