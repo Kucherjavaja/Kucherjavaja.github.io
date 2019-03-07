@@ -68,13 +68,11 @@ ctx.moveTo(320, 0);
 ctx.lineTo(320, 480);
 ctx.moveTo(0, 240);
 ctx.lineTo(640, 240);
-
 ctx.moveTo(x,y);
 ctx.lineTo(x1,y);
 ctx.lineTo(x1,y1);
 ctx.lineTo(x,y1);
 ctx.lineTo(x,y);
-
 ctx.moveTo(z,v);
 ctx.lineTo(z1,v);
 ctx.lineTo(z1,v1);
@@ -87,28 +85,36 @@ function er2(){
 var canvas = document.getElementById('example');
 var ctx = canvas.getContext('2d');
 ctx.strokeStyle = 'red';
+if ( x>z ) {xmin = z} else {xmin = x};
+if ( y1>v1 ) {ymin = v1} else {ymin = y1};
+if ( x1>z1 ) {xmax = x1} else {xmax = z1};
+if ( y>v ) {ymax = y} else {ymax = v};
+
+xmin = 240 + xmin*10
+xmax = 240 + xmax*10
+ymin = 160 - ymin*10
+ymax = 160 - ymax*10
+
 ctx.beginPath();
-ctx.moveTo(x,y);
-ctx.lineTo(x,v1);
-ctx.lineTo(z1,v1);
-ctx.lineTo(z1,y);
-ctx.lineTo(x,y);
+ctx.moveTo(xmin,ymin);
+ctx.lineTo(xmax,ymin);
+ctx.lineTo(xmax,ymax);
+ctx.lineTo(xmin,ymax);
+ctx.lineTo(xmin,ymin);
 ctx.closePath();
-
 ctx.stroke();
-
 }
 		</script>
 	</head>
 	<body>
-x=<input type="text" value="0" id="x_znach"> 
-x1=<input type="text" value="0" id="x1_znach"> 
-z1=<input type="text" value="0" id="z1_znach"> 
-z=<input type="text" value="0" id="z_znach"> 
-y=<input type="text" value="0" id="y_znach"> 
-y1=<input type="text" value="0" id="y1_znach"> 
-v=<input type="text" value="0" id="v_znach"> 
-v1=<input type="text" value="0" id="v1_znach"> 
+x=<input type="text" value="10" id="x_znach"> 
+x1=<input type="text" value="30" id="x1_znach"> 
+z1=<input type="text" value="50" id="z1_znach"> 
+z=<input type="text" value="70" id="z_znach"> 
+y=<input type="text" value="30" id="y_znach"> 
+y1=<input type="text" value="40" id="y1_znach"> 
+v=<input type="text" value="60" id="v_znach"> 
+v1=<input type="text" value="80" id="v1_znach"> 
 
 
 
@@ -120,6 +126,8 @@ v1=<input type="text" value="0" id="v1_znach">
 <br>
 	<canvas width='640' height='480' id='example'>Обновите браузер</canvas>
 	<div id="otvet"></div>
+	<br>
+	
 	<br>
 	</body>
 </html>
