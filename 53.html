@@ -1,0 +1,100 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function func1() {
+      n = Number(document.getElementById("n_f1_znach").value);
+      var i = 0;
+      while (i < n) {
+        document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML + i + " ";
+        i++;
+      }
+    }
+
+    function func2() {
+      n = Number(document.getElementById("n_f2_znach").value);
+      var i = 0;
+      do {
+        document.getElementById("otvet2").innerHTML = document.getElementById("otvet2").innerHTML + i + " ";
+        i++;
+      } while (i < n);
+    }
+
+    function func3() {
+      n = Number(document.getElementById("n_f3_znach").value);
+      var i;
+      for (i = 0; i < n; i++) {
+        document.getElementById("otvet3").innerHTML = document.getElementById("otvet3").innerHTML + i + " ";
+      }
+
+    }
+  </script>
+</head>
+
+<body>
+
+
+  <h1>Цикл A</h1> n=
+  <input type="text" value="6" id="n_f1_znach">
+  <br>
+  <div id="menuBall1" class="menuBall">
+    <a href="#" onclick="func1()" class="ball blueball">
+      <div class="menuText">
+        ♥
+      </div>
+    </a>
+  </div>
+  <div id="otvet1"></div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h1>Цикл Б</h1> n=
+  <input type="text" value="6" id="n_f2_znach">
+  <br>
+  <div id="menuBall1" class="menuBall">
+    <a href="#" onclick="func2()" class="ball redball">
+      <div class="menuText">
+        ♂
+      </div>
+    </a>
+  </div>
+  <div id="otvet2"></div>
+  <br>
+  <br>
+  <br>
+  <h1>Цикл В</h1> n=
+  <input type="text" value="9" id="n_f3_znach">
+  <br>
+  <div id="menuBall1" class="menuBall">
+    <a href="#" onclick="func3()" class="ball greenball">
+      <div class="menuText">
+        ♀
+      </div>
+    </a>
+  </div>
+  <div id="otvet3"></div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h1>Цикл Г</h1> n=
+  <input type="text" value="9" id="n_f3_znach">
+  <br>
+  <div id="menuBall1" class="menuBall">
+    <a href="#" onclick="func3()" class="ball yellowball">
+    <div class="menuText">
+      ♀
+            </div>
+    </a>
+  </div>
+      <div id="otvet4"></div>
+      <br>
+      <br>
+      <br>
+      <br>
+</body>
+
+</html>
