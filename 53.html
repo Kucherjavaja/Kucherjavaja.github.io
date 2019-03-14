@@ -3,10 +3,9 @@
 <head>
   <link rel="stylesheet" href="style.css">
   <script>
-    function func1() {
-      n = Number(document.getElementById("n_f1_znach").value);
-      var i = 0;
-      while (i < n) {
+    function func1()  {
+      var i = 20;
+      while (i < 35) {
         document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML + i + " ";
         i++;
       }
@@ -14,19 +13,20 @@
 
     function func2() {
       n = Number(document.getElementById("n_f2_znach").value);
-      var i = 0;
+      var i = 10;
       do {
-        document.getElementById("otvet2").innerHTML = document.getElementById("otvet2").innerHTML + i + " ";
-        i++;
+        document.getElementById("otvet2").innerHTML = document.getElementById("otvet2").innerHTML + n*n + " ";
+        n++;
       } while (i < n);
     }
 
     function func3() {
       n = Number(document.getElementById("n_f3_znach").value);
-      var i;
-      for (i = 0; i < n; i++) {
-        document.getElementById("otvet3").innerHTML = document.getElementById("otvet3").innerHTML + i + " ";
-      }
+      var i = 50;
+      do {
+        document.getElementById("otvet2").innerHTML = document.getElementById("otvet3").innerHTML + n*n*n + " ";
+        n++;
+      } while (i > n);
 
     }
   </script>
@@ -35,8 +35,8 @@
 <body>
 
 
-  <h1>Цикл A</h1> n=
-  <input type="text" value="6" id="n_f1_znach">
+  <h1>Цикл A</h1>
+
   <br>
   <div id="menuBall1" class="menuBall">
     <a href="#" onclick="func1()" class="ball blueball">
@@ -45,6 +45,8 @@
       </div>
     </a>
   </div>
+<br>
+<br>
   <div id="otvet1"></div>
   <br>
   <br>
