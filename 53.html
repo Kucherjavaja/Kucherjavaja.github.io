@@ -6,28 +6,33 @@
     function func1()  {
       var i = 20;
       while (i < 35) {
-        document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML + i + " ";
+        document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML + i + "<br>";
         i++;
       }
     }
-
     function func2() {
       n = Number(document.getElementById("n_f2_znach").value);
       var i = 10;
       do {
-        document.getElementById("otvet2").innerHTML = document.getElementById("otvet2").innerHTML + n*n + " ";
-        n++;
-      } while (i < n);
+        document.getElementById("otvet2").innerHTML = document.getElementById("otvet2").innerHTML + i*i + "<br>";
+        i++;
+      } while (i <= n);
     }
-
     function func3() {
       n = Number(document.getElementById("n_f3_znach").value);
       var i = 50;
       do {
-        document.getElementById("otvet2").innerHTML = document.getElementById("otvet3").innerHTML + n*n*n + " ";
-        n++;
-      } while (i > n);
-
+        document.getElementById("otvet3").innerHTML = document.getElementById("otvet3").innerHTML + i*i*i + "<br>";
+        i++;
+      } while (i <= n);
+    }
+    function func4() {
+      n = Number(document.getElementById("n_f4_znach").value);
+       i = Number(document.getElementById("n_f5_znach").value);
+      do {
+        document.getElementById("otvet4").innerHTML = document.getElementById("otvet4").innerHTML + i + "<br>";
+        i++;
+      } while (i < n);
     }
   </script>
 </head>
@@ -53,7 +58,7 @@
   <br>
   <br>
   <h1>Цикл Б</h1> n=
-  <input type="text" value="6" id="n_f2_znach">
+  <input type="text" value="50" id="n_f2_znach">
   <br>
   <div id="menuBall1" class="menuBall">
     <a href="#" onclick="func2()" class="ball redball">
@@ -67,7 +72,7 @@
   <br>
   <br>
   <h1>Цикл В</h1> n=
-  <input type="text" value="9" id="n_f3_znach">
+  <input type="text" value="100" id="n_f3_znach">
   <br>
   <div id="menuBall1" class="menuBall">
     <a href="#" onclick="func3()" class="ball greenball">
@@ -83,10 +88,12 @@
   <br>
   <br>
   <h1>Цикл Г</h1> n=
-  <input type="text" value="9" id="n_f3_znach">
+  <input type="text" value="50" id="n_f4_znach">
+   i=
+  <input type="text" value="10" id="n_f5_znach">
   <br>
   <div id="menuBall1" class="menuBall">
-    <a href="#" onclick="func3()" class="ball yellowball">
+    <a href="#" onclick="func4()" class="ball yellowball">
     <div class="menuText">
       ♀
             </div>
