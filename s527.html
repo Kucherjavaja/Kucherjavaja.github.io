@@ -1,0 +1,139 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="stylecss.html">
+  <script>
+    function func1()  {
+     a = Number(document.getElementById("n_f1_znach").value);
+    b = Number(document.getElementById("n_f2_znach").value);
+    var c = 0;
+  
+     
+      document.getElementById("otvet1").innerHTML = "";
+       while (b>=a){
+         c=c+a;
+          document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML +a +" "+ c  + "<br>";
+         a++;
+       }
+       do { c= c/n}
+       document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML +c  + "<br>";
+    
+    }
+    function func2() {
+    a = Number(document.getElementById("n_f3_znach").value);
+    b = Number(document.getElementById("n_f4_znach").value);
+    var c = a+1;
+    document.getElementById("otvet2").innerHTML = "";
+       while (b>=a){
+         c=c*a;
+          document.getElementById("otvet2").innerHTML = document.getElementById("otvet2").innerHTML +a +" "+ c  + "<br>";
+         a++;
+       }
+       document.getElementById("otvet2").innerHTML = document.getElementById("otvet2").innerHTML +c  + "<br>";
+    
+    }
+    function func3() {
+    a = Number(document.getElementById("n_f5_znach").value);
+    b = Number(document.getElementById("n_f6_znach").value);
+    var c = c+a;
+    var n = 
+    document.getElementById("otvet3").innerHTML = "";
+       while (b>=a){
+         c=c*a;
+          document.getElementById("otvet3").innerHTML = document.getElementById("otvet3").innerHTML +a +" "+ c  + "<br>";
+         a++;
+       }
+       document.getElementById("otvet3").innerHTML = document.getElementById("otvet3").innerHTML +c  + "<br>";
+    
+    }
+    
+    function func4() {
+    a = Number(document.getElementById("n_f7_znach").value);
+    b = Number(document.getElementById("n_f8_znach").value);
+    var c = a*a;
+     var c = b*b;
+    document.getElementById("otvet4").innerHTML = "";
+       while (b>=a){
+         c=c*a;
+          document.getElementById("otvet4").innerHTML = document.getElementById("otvet4").innerHTML +a +" "+ c  + "<br>";
+         a++;
+       }
+       document.getElementById("otvet4").innerHTML = document.getElementById("otvet4").innerHTML +c  + "<br>";
+    
+    }
+  </script>
+</head>
+
+<body>
+
+
+  <h1>5.27</h1>
+ a = <input type="text" value="1" id="n_f1_znach">
+b = <input type="text" value="5" id="n_f2_znach">
+  <br>
+  <div id="menuBall1" class="menuBall">
+    <a href="#" onclick="func1()" class="ball blueball">
+      <div class="menuText">
+        ♥
+      </div>
+    </a>
+  </div>
+<br>
+<br>
+  <div id="otvet1"></div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h1>5.28</h1>
+  a = <input type="text" value="1" id="n_f3_znach">
+b = <input type="text" value="5" id="n_f4_znach">
+  <br>
+  <div id="menuBall1" class="menuBall">
+    <a href="#" onclick="func2()" class="ball redball">
+      <div class="menuText">
+        ♂
+      </div>
+    </a>
+  </div>
+  <div id="otvet2"></div>
+  <br>
+  <br>
+  <br>
+  <h1>5.29</h1>
+  a = <input type="text" value="10" id="n_f5_znach">
+b = <input type="text" value="50" id="n_f6_znach">
+  <br>
+  <div id="menuBall1" class="menuBall">
+    <a href="#" onclick="func3()" class="ball greenball">
+      <div class="menuText">
+        ♀
+      </div>
+    </a>
+  </div>
+  <div id="otvet3"></div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h1>5.30</h1> a=
+  <input type="text" value="50" id="n_f7_znach">
+   b=
+  <input type="text" value="10" id="n_f8_znach">
+  <br>
+  <div id="menuBall1" class="menuBall">
+    <a href="#" onclick="func4()" class="ball yellowball">
+    <div class="menuText">
+      ♀
+            </div>
+    </a>
+  </div>
+      <div id="otvet4"></div>
+      <br>
+      <br>
+      <br>
+      <br>
+</body>
+
+</html>
