@@ -1,0 +1,172 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="stylecss.html">
+  <script>
+    function func1()  {
+    var n = Number(document.getElementById("n_f1_znach").value);
+
+    var c = 0;
+    document.getElementById("otvet1").innerHTML = "";
+   var i = n
+       while (2*n>=i){
+         c=c+i*i;
+          document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML +i +" "+ c  + "<br>";
+        i++;
+       }
+       document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML +c  + "<br>";
+    
+    }
+    function func2() {
+   var n = Number(document.getElementById("n_f2_znach").value);
+   var c = 0;
+   var i = 1;
+    document.getElementById("otvet2").innerHTML = "";
+    
+       while (n>=i){
+         c=c + 1/i;
+          document.getElementById("otvet2").innerHTML = document.getElementById("otvet2").innerHTML +i +" "+ c  + "<br>";
+         i++;
+       }
+       document.getElementById("otvet2").innerHTML = document.getElementById("otvet2").innerHTML +c  + "<br>";
+    
+    }
+    function func3() {
+  
+   
+    var c = 0;
+var n= 2;
+var i = n +1
+    document.getElementById("otvet3").innerHTML = "";
+       while (10>=n){
+         c =c + n/i
+        ;
+          document.getElementById("otvet3").innerHTML = document.getElementById("otvet3").innerHTML +n +" "+ c  + "<br>";
+         n++; 
+         
+       }
+      
+        
+       document.getElementById("otvet3").innerHTML = document.getElementById("otvet3").innerHTML +c  + "<br>";
+    
+    }
+    
+    function func4() {
+    var n = Number(document.getElementById("n_f7_znach").value);
+
+    var c = 0;
+    document.getElementById("otvet4").innerHTML = "";
+   var i = n
+       while (2*n>=i){
+         c=c+i*i;
+          document.getElementById("otvet4").innerHTML = document.getElementById("otvet4").innerHTML +i +" "+ c  + "<br>";
+        i++;
+       }
+       document.getElementById("otvet4").innerHTML = document.getElementById("otvet4").innerHTML +c  + "<br>";
+    
+    }
+     function func5() {
+    var n = Number(document.getElementById("n_f7_znach").value);
+
+    var c = 0;
+    document.getElementById("otvet4").innerHTML = "";
+   var i = n
+       while (2*n>=i){
+         c=c+i*i;
+          document.getElementById("otvet4").innerHTML = document.getElementById("otvet4").innerHTML +i +" "+ c  + "<br>";
+        i++;
+       }
+       document.getElementById("otvet4").innerHTML = document.getElementById("otvet4").innerHTML +c  + "<br>";
+    
+    }
+  </script>
+</head>
+
+<body>
+
+
+  <h1>5.31</h1>
+ n = <input type="text" value="3" id="n_f1_znach">
+
+  <br>
+  <div id="menuBall1" class="menuBall">
+    <a href="#" onclick="func1()" class="ball blueball">
+      <div class="menuText">
+        ♥
+      </div>
+    </a>
+  </div>
+<br>
+<br>
+  <div id="otvet1"></div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h1>5.32</h1>
+  n = <input type="text" value="3" id="n_f2_znach">
+
+  <br>
+  <div id="menuBall1" class="menuBall">
+    <a href="#" onclick="func2()" class="ball redball">
+      <div class="menuText">
+        ♂
+      </div>
+    </a>
+  </div>
+  <div id="otvet2"></div>
+  <br>
+  <br>
+  <br>
+  <h1>5.33</h1>
+
+
+  <br>
+  <div id="menuBall1" class="menuBall">
+    <a href="#" onclick="func3()" class="ball greenball">
+      <div class="menuText">
+        ♀
+      </div>
+    </a>
+  </div>
+  <div id="otvet3"></div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h1>5.34</h1> n=
+  <input type="text" value="1" id="n_f4_znach">
+  
+  <br>
+  <div id="menuBall1" class="menuBall">
+    <a href="#" onclick="func4()" class="ball yellowball">
+    <div class="menuText">
+      ♀
+            </div>
+    </a>
+  </div>
+      <div id="otvet4"></div>
+      <br>
+      <br>
+      <br>
+      <br>
+       <h1>5.35</h1> n=
+  <input type="text" value="1" id="n_f5_znach">
+  
+  <br>
+  <div id="menuBall1" class="menuBall">
+    <a href="#" onclick="func5()" class="ball yellowball">
+    <div class="menuText">
+      ♀
+            </div>
+    </a>
+  </div>
+      <div id="otvet4"></div>
+      <br>
+      <br>
+      <br>
+      <br>
+</body>
+
+</html>
