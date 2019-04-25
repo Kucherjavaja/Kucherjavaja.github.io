@@ -14,9 +14,7 @@
         i++;
       }
       document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML + c + "<br>";
-
     }
-
    function func2() {
    var n = Number(document.getElementById("n_f2_znach").value);
    var c = 0;
@@ -31,10 +29,7 @@
        document.getElementById("otvet2").innerHTML = document.getElementById("otvet2").innerHTML +c  + "<br>";
     
     }
-
     function func3() {
-
-
       var c = 0;
       var n = 2;
       document.getElementById("otvet3").innerHTML = "";
@@ -42,16 +37,10 @@
         c = c + n / (n + 1);
         document.getElementById("otvet3").innerHTML = document.getElementById("otvet3").innerHTML + n + " " + c + "<br>";
         n++;
-
       }
-
-
       document.getElementById("otvet3").innerHTML = document.getElementById("otvet3").innerHTML + c + "<br>";
-
     }
-
     function func4() {
-
       var i = 3;
       var c = 1 ;
       document.getElementById("otvet4").innerHTML = "";
@@ -62,22 +51,20 @@
     
       }
       document.getElementById("otvet4").innerHTML = document.getElementById("otvet4").innerHTML + c + "<br>";
-
     }
-
     function func5() {
       var n = Number(document.getElementById("n_f3_znach").value);
       var c = 0;
-      var i = -1;
+      var k = 1;
       var i = 1;
       document.getElementById("otvet5").innerHTML = "";
       while (n>=i){
-         c=(c - 1/k)i;
+        c=c + 1/i*k;
+        k=k*(-1);
         document.getElementById("otvet5").innerHTML = document.getElementById("otvet5").innerHTML + i + " " + c + "<br>";
         i++;
       }
       document.getElementById("otvet5").innerHTML = document.getElementById("otvet5").innerHTML + c + "<br>";
-
     }
   </script>
 </head>
@@ -161,7 +148,7 @@
       </div>
     </a>
   </div>
-  <div id="otvet4"></div>
+  <div id="otvet5"></div>
   <br>
   <br>
   <br>
